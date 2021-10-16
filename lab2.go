@@ -109,6 +109,13 @@ func main() {
 		for j := 0; j < n; j++ {
 			arr[i][j] = j + 1
 
+			switch time.Now().Weekday() {
+	case time.Saturday, time.Sunday:
+		fmt.Println("weekend is here")
+	case time.Wednesday:
+		fmt.Println("middle day ")
+	default:
+		fmt.Println("all other day")
 		}
 
 	}
